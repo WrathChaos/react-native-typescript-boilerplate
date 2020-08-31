@@ -22,5 +22,4 @@ export default {
     semiBoldLegacy: "helvetica-SemiBoldLegacy",
     semiBoldLegacyItalic: "helvetica-SemiBoldLegacyItalic",
   },
-  grotesk: "Grotesk",
 };
