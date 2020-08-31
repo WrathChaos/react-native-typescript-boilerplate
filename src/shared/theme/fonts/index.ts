@@ -1,5 +1,5 @@
 export default {
-  // these are the just examples
+  // ? These are the just examples
   helvetica: {
     bold: "helvetica-Bold",
     boldItalic: "helvetica-BoldItalic",
@@ -21,5 +21,8 @@ export default {
     semiBoldItalic: "helvetica-SemiBoldItalic",
     semiBoldLegacy: "helvetica-SemiBoldLegacy",
     semiBoldLegacyItalic: "helvetica-SemiBoldLegacyItalic",
+  },
+  seuzOne: {
+    regular: "SuezOne-Regular",
   },
 };

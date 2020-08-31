@@ -5,24 +5,19 @@ import * as NavigationService from "react-navigation-helpers";
  * ? Local Imports
  */
 import colors from "@colors";
-import styles from "./HomeScreen.style";
-import { SCREENS } from "@shared-constants";
+import styles from "./DetailScreen.style";
 import Text from "@shared-components/TextWrapper/Text";
 
-interface IProps {}
-
-interface IState {}
-
-export default class HomeScreen extends Component<IProps, IState> {
+export default class DetailScreen extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text h1> HomeScreen </Text>
+        <Text h1>Detail Screen</Text>
         <TouchableOpacity
           style={styles.buttonStyle}
-          onPress={() => NavigationService.navigate(SCREENS.DETAIL)}
+          onPress={() => NavigationService.goBack()}
         >
-          <Text color={colors.light.white}>Go To Detail Screen</Text>
+          <Text color={colors.light.white}>Go back to Home</Text>
         </TouchableOpacity>
       </View>
     );

@@ -6,6 +6,7 @@ export default {
     dark: "#424242"
   },
   light: {
+    white: "#fdfdfd",
     primary: "#f593a5",
     primaryDark: "#f35d8d",
     shadowColor: "#91627b"
