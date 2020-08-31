@@ -1,26 +1,24 @@
 import React, { Component } from "react";
 import { Text, View, TouchableOpacity } from "react-native";
+import * as NavigationService from "react-navigation-helpers";
 /**
  * ? Local Imports
  */
 import styles from "./HomeScreen.style";
+import { SCREENS } from "@shared-constants";
 
-export default class HomeScreen extends Component {
+interface IProps {}
+
+interface IState {}
+
+export default class HomeScreen extends Component<IProps, IState> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{ fontSize: 32 }}> HomeScreen </Text>
+        <Text style={styles.titleTextStyle}> HomeScreen </Text>
         <TouchableOpacity
-          style={{
-            height: 35,
-            width: "90%",
-            marginTop: 32,
-            borderRadius: 12,
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#5931FF",
-          }}
-          onPress={() => this.props.navigation.navigate("Detail")}
+          style={styles.buttonStyle}
+          onPress={() => NavigationService.navigate(SCREENS.DETAIL)}
         >
           <Text style={{ color: "#fdfdfd", fontWeight: "700" }}>
             Go To Detail Screen

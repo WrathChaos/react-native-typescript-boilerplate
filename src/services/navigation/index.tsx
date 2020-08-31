@@ -1,9 +1,13 @@
 import React from "react";
+import Icon from "react-native-dynamic-vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
+import { isReadyRef, navigationRef } from "react-navigation-helpers";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import Icon from "react-native-dynamic-vector-icons";
-
+/**
+ * ? Local Imports
+ */
+import { SCREENS } from "@shared-constants";
 // ? Screens
 import HomeScreen from "@screens/home/HomeScreen";
 import SearchScreen from "@screens/search/SearchScreen";
@@ -14,6 +18,10 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 const Navigation = (props: any) => {
+  React.useEffect(() => {
+    return () => (isReadyRef.current = false);
+  }, []);
+
   const renderTabNavigation = () => {
     return (
       <Tab.Navigator
@@ -21,9 +29,9 @@ const Navigation = (props: any) => {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName: string = "";
 
-            if (route.name === "Home") {
+            if (route.name === SCREENS.HOME) {
               iconName = focused ? "ios-heart" : "heart-outline";
-            } else if (route.name === "Search") {
+            } else if (route.name === SCREENS.SEARCH) {
               iconName = focused ? "ios-search" : "ios-search";
             }
 
@@ -38,21 +46,26 @@ const Navigation = (props: any) => {
           inactiveTintColor: "gray",
         }}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Search" component={SearchScreen} />
+        <Tab.Screen name={SCREENS.HOME} component={HomeScreen} />
+        <Tab.Screen name={SCREENS.SEARCH} component={SearchScreen} />
       </Tab.Navigator>
     );
   };
 
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      ref={navigationRef}
+      onReady={() => {
+        isReadyRef.current = true;
+      }}
+    >
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
         }}
       >
-        <Stack.Screen name="Home" component={renderTabNavigation} />
-        <Stack.Screen name="Detail">
+        <Stack.Screen name={SCREENS.HOME} component={renderTabNavigation} />
+        <Stack.Screen name={SCREENS.DETAIL}>
           {(props) => <DetailScreen {...props} />}
         </Stack.Screen>
       </Stack.Navigator>

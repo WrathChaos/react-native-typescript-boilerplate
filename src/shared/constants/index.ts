@@ -1,3 +1,6 @@
 // ? Screens
-export const HOME_SCREEN = "home-screen";
-export const TEST_SCREEN = "test-screen";
+export const SCREENS = {
+  HOME: "home",
+  DETAIL: "detail",
+  SEARCH: "search",
+};
