@@ -1,30 +1,30 @@
-import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-dynamic-vector-icons';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Icon from "react-native-dynamic-vector-icons";
 
 // ? Screens
-import HomeScreen from '@screens/home/HomeScreen';
-import SearchScreen from '@screens/search/SearchScreen';
-import DetailScreen from '@screens/detail/DetailScreen';
+import HomeScreen from "@screens/home/HomeScreen";
+import SearchScreen from "@screens/search/SearchScreen";
+import DetailScreen from "@screens/detail/DetailScreen";
 
 // ? If you want to use stack or tab or both
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const Navigation = (props) => {
+const Navigation = (props: any) => {
   const renderTabNavigation = () => {
     return (
       <Tab.Navigator
-        screenOptions={({route}) => ({
-          tabBarIcon: ({focused, color, size}) => {
-            let iconName;
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            let iconName: string = "";
 
-            if (route.name === 'Home') {
-              iconName = focused ? 'ios-heart' : 'heart-outline';
-            } else if (route.name === 'Search') {
-              iconName = focused ? 'ios-search' : 'ios-search';
+            if (route.name === "Home") {
+              iconName = focused ? "ios-heart" : "heart-outline";
+            } else if (route.name === "Search") {
+              iconName = focused ? "ios-search" : "ios-search";
             }
 
             // You can return any component that you like here!
@@ -34,9 +34,10 @@ const Navigation = (props) => {
           },
         })}
         tabBarOptions={{
-          activeTintColor: 'tomato',
-          inactiveTintColor: 'gray',
-        }}>
+          activeTintColor: "tomato",
+          inactiveTintColor: "gray",
+        }}
+      >
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Search" component={SearchScreen} />
       </Tab.Navigator>
@@ -48,7 +49,8 @@ const Navigation = (props) => {
       <Stack.Navigator
         screenOptions={{
           headerShown: false,
-        }}>
+        }}
+      >
         <Stack.Screen name="Home" component={renderTabNavigation} />
         <Stack.Screen name="Detail">
           {(props) => <DetailScreen {...props} />}

@@ -1,23 +1,25 @@
 {
+  "presets": ["module:metro-react-native-babel-preset"],
   "plugins": [
     [
       "module-resolver",
       {
         "root": ["./src"],
         "alias": [
-          { "@shared-components": "./src/shared/components" },
-          { "@shared-constants": "./src/shared/constants" },
-          { "@shared-theme": "./src/shared/theme" },
-          { "@font-size": "./src/shared/theme/font-size" },
-          { "@api": "./src/services/api/index" },
-          { "@fonts": "./src/shared/theme/fonts/index" },
-          { "@colors": "./src/shared/theme/colors" },
-          { "@theme": "./src/shared/theme/index" },
-          { "@services": "./src/services" },
-          { "@screens": "./src/screens" },
-          { "@utils": "./src/utils/" },
+          { "@shared-components": "./shared/components" },
+          { "@shared-constants": "./shared/constants" },
+          { "@shared-theme": "./shared/theme" },
+          { "@font-size": "./shared/theme/font-size" },
+          { "@api": "./services/api/index" },
+          { "@fonts": "./shared/theme/fonts/index" },
+          { "@colors": "./shared/theme/colors" },
+          { "@theme": "./shared/theme/index" },
+          { "@services": "./services" },
+          { "@screens": "./screens" },
+          { "@utils": "./utils/" },
           { "@assets": "./assets/" }
-        ]
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     ]
   ]
