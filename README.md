@@ -146,6 +146,7 @@ import { theme, fonts, colors, spacing, fontSize } from "@shared-styles/index";
 ### Future Plans
 
 - [x] ~~LICENSE~~
+- [ ] Better and separated documentation
 - [ ] MobX State Tree Fork Version
 - [ ] Write an article about the lib on Medium
 
