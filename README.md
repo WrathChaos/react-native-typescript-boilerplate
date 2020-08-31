@@ -21,7 +21,7 @@ You can simply clone the project and start with your barebone project
 git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
 ```
 
-### Clean-Up & Simple Run
+## Clean-Up & Simple Run
 
 Clean up the files from the example repository and do not forget to install the dependencies
 
@@ -30,6 +30,12 @@ Clean up the files from the example repository and do not forget to install the 
 - `git init`
 - `npm i`
 - `npx pod-install` (iOS Only)
+- `react-native run-ios/android`
+
+**OR**
+
+- `npm run clean-up`
+- `npm i && npx pod-install`
 - `react-native run-ios/android`
 
 # What's Included?
