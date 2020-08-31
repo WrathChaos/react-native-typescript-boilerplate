@@ -1,6 +1,7 @@
 {
   "name": "react-native-typescript-boilerplate",
   "version": "1.0.0",
+  "description": "A lot of fundamental features with Typescript support React Native Boilerplate",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",

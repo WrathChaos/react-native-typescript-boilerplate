@@ -1,6 +1,6 @@
 <img alt="React Native Typescript Boilerplate" src="https://github.com/WrathChaos/react-native-typescript-boilerplate/blob/master/assets/logo.png" width="1050"/>
 
-[![React Native Typescript Boilerplate](https://img.shields.io/badge/-React%20Native%20pure%20Boilerplate-lightgrey?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
+[![A lot of fundamental features with Typescript support React Native Boilerplate](https://img.shields.io/badge/-A%20lot%20of%20fundamental%20features%20with%20Typescript%20support%20React%20Native%20Boilerplate-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
 
 [![npm version](https://img.shields.io/npm/v/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
 [![npm](https://img.shields.io/npm/dt/react-native-typescript-boilerplate.svg?style=for-the-badge)](https://www.npmjs.com/package/@freakycoder/react-native-typescript-boilerplate)
