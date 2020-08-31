@@ -1,5 +1,5 @@
 import EventEmitter from "events";
-// Initilization
+// Initialization
 const eventEmitter = new EventEmitter();
 eventEmitter.setMaxListeners(50);
 // Export the module

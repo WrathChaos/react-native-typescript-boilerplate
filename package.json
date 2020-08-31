@@ -23,6 +23,7 @@
     "react-native-animated-splash-screen": "^2.0.5",
     "react-native-dynamic-vector-icons": "^1.0.0",
     "react-native-gesture-handler": "^1.7.0",
+    "react-native-localization": "^2.1.6",
     "react-native-safe-area-context": "^3.1.7",
     "react-native-screens": "^2.10.1",
     "react-native-vector-icons": "^7.0.0",
