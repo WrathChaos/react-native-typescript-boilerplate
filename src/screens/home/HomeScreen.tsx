@@ -20,9 +20,7 @@ export default class HomeScreen extends Component<IProps, IState> {
           style={styles.buttonStyle}
           onPress={() => NavigationService.navigate(SCREENS.DETAIL)}
         >
-          <Text style={{ color: "#fdfdfd", fontWeight: "700" }}>
-            Go To Detail Screen
-          </Text>
+          <Text style={styles.buttonTextStyle}>Go To Detail Screen</Text>
         </TouchableOpacity>
       </View>
     );

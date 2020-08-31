@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* RNTypescriptBoilerplateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNTypescriptBoilerplateTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -18,6 +17,7 @@
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		9CB56DC0DA46BA916A805635 /* libPods-RNTypescriptBoilerplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E35DF7BAE771E2DE91481ADE /* libPods-RNTypescriptBoilerplate.a */; };
 		B9AFD78E7A8E3B5CC00C5345 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297AA655F9C1889B4BA69572 /* libPods-RNTypescriptBoilerplate-RNTypescriptBoilerplateTests.a */; };
+		490FA305741F4DDEB83B9F08 /* SuezOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5DC0F6D00884D5AB012AB16 /* SuezOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +59,7 @@
 		E35DF7BAE771E2DE91481ADE /* libPods-RNTypescriptBoilerplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTypescriptBoilerplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		C5DC0F6D00884D5AB012AB16 /* SuezOne-Regular.ttf */ = {isa = PBXFileReference; name = "SuezOne-Regular.ttf"; path = "../assets/fonts/SeuzOne/SuezOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +186,7 @@
 		EDFF3DD15E6149AEB5D595D1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C5DC0F6D00884D5AB012AB16 /* SuezOne-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -332,6 +334,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				490FA305741F4DDEB83B9F08 /* SuezOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
