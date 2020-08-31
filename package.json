@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "clean-up": "rm -rf .git README.md && rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png ./assets/splash && git init"
+    "clean-up": "rm -rf .git README.md && rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png && git init"
   },
   "dependencies": {
     "@freakycoder/react-native-custom-text": "0.0.12",

@@ -26,7 +26,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 Clean up the files from the example repository and do not forget to install the dependencies
 
 - `rm -rf .git README.md`
-- `rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png ./assets/splash`
+- `rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png`
 - `git init`
 - `npm i`
 - `npx pod-install` (iOS Only)
