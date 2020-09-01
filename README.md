@@ -49,12 +49,13 @@ Clean up the files from the example repository and do not forget to install the 
   - Fonts
   - Built-in TextWrapper for better Custom Text usage
 - **Built-in Animated Splash Screen**
-- **Local Storage Ready to Use Util Functions**
+- **Built-in Localization (Multi-Language Support)**
 - **HTTP Network Management**
   - Axios
   - API Service with Usage Examples
 - **Built-in EventEmitter**
   - EventBus
+- **Local Storage Ready to Use Util Functions**
 - **Babel Plugin Module Resolver**
   - Fixing the relative path problem
   - Visit `.babelrc` to ready to use and more customization
