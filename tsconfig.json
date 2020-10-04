@@ -6,7 +6,7 @@
     "allowJs": true,
     "jsx": "react-native",
     "noEmit": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "strict": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,

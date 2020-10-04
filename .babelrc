@@ -14,6 +14,7 @@
           { "@fonts": "./src/shared/theme/fonts/index" },
           { "@colors": "./src/shared/theme/colors" },
           { "@theme": "./src/shared/theme/index" },
+          { "@models": "./src/services/models" },
           { "@services": "./src/services" },
           { "@screens": "./src/screens" },
           { "@utils": "./src/utils/" },
