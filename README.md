@@ -1,4 +1,4 @@
-<img alt="React Native Typescript Boilerplate" src="https://github.com/WrathChaos/react-native-typescript-boilerplate/blob/master/assets/logo.png" width="1050"/>
+<img alt="React Native Typescript Boilerplate" src="assets/logo.png" width="1050"/>
 
 [![A lot of fundamental features with Typescript support React Native Boilerplate](https://img.shields.io/badge/-A%20lot%20of%20fundamental%20features%20with%20Typescript%20support%20React%20Native%20Boilerplate-orange?style=for-the-badge)](https://github.com/WrathChaos/react-native-typescript-boilerplate)
 
@@ -20,23 +20,6 @@ You can simply clone the project and start with your barebone project
 ```sh
 git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
 ```
-
-## Clean-Up & Simple Run
-
-Clean up the files from the example repository and do not forget to install the dependencies
-
-- `rm -rf .git README.md`
-- `rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png`
-- `git init`
-- `npm i`
-- `npx pod-install` (iOS Only)
-- `react-native run-ios/android`
-
-**OR**
-
-- `npm run clean-up`
-- `npm i && npx pod-install`
-- `react-native run-ios/android`
 
 # What's Included?
 
@@ -62,43 +45,6 @@ Clean up the files from the example repository and do not forget to install the 
 - **Built-in Custom Font Implementation**
   - All you need to do is copy-paste the .tff file and run `npx react-native-asset` command
 
-# Step By Step Guide
-
-## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
-
-```sh
-npx react-native-rename <your-project-name>
-```
-
-> With custom Bundle Identifier (Android only. For iOS, please use Xcode)
-
-```sj
-npx react-native-rename <your-project-name> -b <bundleIdentifier>
-```
-
-### Install Pods (iOS Only)
-
-- `npm i`
-- `cd ios && pod install`
-- `cd .. && react-native run-ios/android`
-
-### Android local.properties (Android Only)
-
-- `npm i`
-- `cd android && mkdir local.properties`
-- `nano local.properties`
-
-#### Example of MacOS Android SDK Path
-
-Make sure that set your right path of Android SDK
-
-```
-ndk.dir=/Users/your-name/Library/Android/sdk/ndk-bundle
-sdk.dir=/Users/your-name/Library/Android/sdk
-```
-
-- `cd .. & react-native run-ios/android`
-
 # Components
 
 ## Styles
@@ -107,7 +53,7 @@ sdk.dir=/Users/your-name/Library/Android/sdk
 - Colors
 - Fonts
 - Theme
-- Tont-size
+- Font Size
 
 ## Imports
 
@@ -151,6 +97,60 @@ if you want to call them all at once
 ```js
 import { theme, fonts, colors, spacing, fontSize } from "@shared-styles/index";
 ```
+
+# Step By Step Guide
+
+## Clean-Up & Simple Run
+
+Clean up the files from the example repository and do not forget to install the dependencies
+
+- `rm -rf .git README.md`
+- `rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png`
+- `git init`
+- `npm i`
+- `npx pod-install` (iOS Only)
+- `react-native run-ios/android`
+
+**OR**
+
+- `npm run clean-up`
+- `npm i && npx pod-install`
+- `react-native run-ios/android`
+
+## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
+
+```sh
+npx react-native-rename <your-project-name>
+```
+
+> With custom Bundle Identifier (Android only. For iOS, please use Xcode)
+
+```sj
+npx react-native-rename <your-project-name> -b <bundleIdentifier>
+```
+
+### Install Pods (iOS Only)
+
+- `npm i`
+- `cd ios && pod install`
+- `cd .. && react-native run-ios/android`
+
+### Android local.properties (Android Only)
+
+- `npm i`
+- `cd android && mkdir local.properties`
+- `nano local.properties`
+
+#### Example of MacOS Android SDK Path
+
+Make sure that set your right path of Android SDK
+
+```
+ndk.dir=/Users/your-name/Library/Android/sdk/ndk-bundle
+sdk.dir=/Users/your-name/Library/Android/sdk
+```
+
+- `cd .. & react-native run-ios/android`
 
 ### Future Plans
 
