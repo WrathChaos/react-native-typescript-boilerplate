@@ -17,8 +17,8 @@ import DetailScreen from "@screens/detail/DetailScreen";
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
-const Navigation = (props: any) => {
-  React.useEffect(() => {
+const Navigation = () => {
+  React.useEffect((): any => {
     return () => (isReadyRef.current = false);
   }, []);
 
@@ -28,13 +28,11 @@ const Navigation = (props: any) => {
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName: string = "";
-
             if (route.name === SCREENS.HOME) {
               iconName = focused ? "ios-heart" : "heart-outline";
             } else if (route.name === SCREENS.SEARCH) {
               iconName = focused ? "ios-search" : "ios-search";
             }
-
             // You can return any component that you like here!
             return (
               <Icon name={iconName} type="Ionicons" size={size} color={color} />
