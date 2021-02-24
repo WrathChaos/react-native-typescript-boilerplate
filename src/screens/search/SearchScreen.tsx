@@ -4,7 +4,7 @@ import { View } from "react-native";
  * ? Local Imports
  */
 import styles from "./SearchScreen.style";
-import Text from "@shared-components/TextWrapper/Text";
+import Text from "@shared-components/TextWrapper/TextWrapper";
 
 export default class SearchScreen extends Component {
   render() {

@@ -24,23 +24,23 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
     // ? Babel Plugin Module Resolver
-    // "baseUrl": "./src",
-    // "paths": {
-    //   "@shared-components": ["./shared/components"],
-    //   "@shared-constants": ["./shared/constants"],
-    //   "@shared-theme": ["./shared/theme"],
-    //   "@font-size": ["./shared/theme/font-size"],
-    //   "@api": ["./services/api/index"],
-    //   "@fonts": ["./shared/theme/fonts/index"],
-    //   "@colors": ["./shared/theme/colors"],
-    //   "@theme": ["./shared/theme/index"],
-    //   "@services": ["./services"],
-    //   "@screens": ["./screens"],
-    //   "@utils": ["./utils/"],
-    //   "@assets": ["./assets/"]
-    // }
+    "baseUrl": "./src",
+    "paths": {
+      "@shared-components/*": ["./shared/components/*"],
+      "@shared-constants": ["./shared/constants"],
+      "@shared-theme": ["./shared/theme"],
+      "@font-size": ["./shared/theme/font-size"],
+      "@api": ["./services/api/index"],
+      "@fonts": ["./shared/theme/fonts/index"],
+      "@colors": ["./shared/theme/colors"],
+      "@theme": ["./shared/theme/index"],
+      "@services": ["./services"],
+      "@screens": ["./screens"],
+      "@utils": ["./utils/"],
+      "@assets": ["./assets/"]
+    }
   },
   "exclude": [
     "node_modules",

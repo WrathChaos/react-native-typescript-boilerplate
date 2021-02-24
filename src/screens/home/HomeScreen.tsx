@@ -7,7 +7,7 @@ import * as NavigationService from "react-navigation-helpers";
 import colors from "@colors";
 import styles from "./HomeScreen.style";
 import { SCREENS } from "@shared-constants";
-import Text from "@shared-components/TextWrapper/Text";
+import Text from "@shared-components/TextWrapper/TextWrapper";
 
 interface IProps {}
 
@@ -24,6 +24,7 @@ export default class HomeScreen extends Component<IProps, IState> {
         >
           <Text color={colors.light.white}>Go To Detail Screen</Text>
         </TouchableOpacity>
+        <Text h5></Text>
       </View>
     );
   }
