@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: "@react-native-community",
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint", "import"],
+  plugins: ["import", "eslint-plugin-import", "@typescript-eslint"],
   settings: {
     "import/resolver": {
       node: {
@@ -28,7 +28,6 @@ module.exports = {
       },
     },
   },
-  extends: ["plugin:@typescript-eslint/recommended", "@react-native-community"],
   rules: {
     quotes: [
       "error",
@@ -57,15 +56,13 @@ module.exports = {
     "import/prefer-default-export": 0,
     "import/no-anonymous-default-export": 0,
     "import/named": 0,
+    "@typescript-eslint/no-empty-interface": 0,
     "import/namespace": 0,
     "import/default": 0,
-    "import/no-named-as-default-member": 0,
     "import/no-named-as-default": 0,
-    "import/no-cycle": 0,
     "import/no-unused-modules": 0,
     "import/no-deprecated": 0,
     "@typescript-eslint/indent": 0,
-    "import/no-anonymous-default-export": 2,
     "react-hooks/rules-of-hooks": 2,
     "react-hooks/exhaustive-deps": [
       "error",
