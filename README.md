@@ -60,7 +60,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 Predefined **`h`** tags are usable with TextWrapper
 
 ```jsx
-import Text from "@shared-components/TextWrapper/Text";
+import Text from "@shared-components/text-wrapper/Text";
 
 // ? Advanced Usage Example
 <Text h3 bold right color="#913400" numberOfLines={1} style={{ margin: 16 }}>

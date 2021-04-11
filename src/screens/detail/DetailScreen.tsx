@@ -6,7 +6,7 @@ import * as NavigationService from "react-navigation-helpers";
  */
 import colors from "@colors";
 import styles from "./DetailScreen.style";
-import Text from "@shared-components/TextWrapper/TextWrapper";
+import Text from "@shared-components/text-wrapper/TextWrapper";
 
 export default class DetailScreen extends Component {
   render() {

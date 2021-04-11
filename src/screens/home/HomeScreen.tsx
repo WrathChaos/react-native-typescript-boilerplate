@@ -7,7 +7,7 @@ import * as NavigationService from "react-navigation-helpers";
 import colors from "@colors";
 import styles from "./HomeScreen.style";
 import { SCREENS } from "@shared-constants";
-import Text from "@shared-components/TextWrapper/TextWrapper";
+import Text from "@shared-components/text-wrapper/TextWrapper";
 
 interface IProps {}
 
