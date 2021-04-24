@@ -105,8 +105,6 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 ├───package.json
 ├───react-native.config.js
 ├───tsconfig.json
-├───yarn-error.log
-└───yarn.lock
 ```
 
 # Components
