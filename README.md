@@ -45,6 +45,68 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 - **Built-in Custom Font Implementation**
   - All you need to do is copy-paste the .tff file and run `npx react-native-asset` command
 
+## Project Structure
+
+```
+├───android
+├───ios
+├───src
+│   ├───screens
+│   │   ├───detail
+│   │   │   ├───DetailScreen.style.ts
+│   │   │   └───DetailScreen.tsx
+│   │   ├───home
+│   │   │   ├───HomeScreen.style.ts
+│   │   │   └───HomeScreen.tsx
+│   │   └───search
+│   │       ├───SearchScreen.style.ts
+│   │       └───SearchScreen.tsx
+│   ├───services
+│   │   ├───api
+│   │   │   ├───api.constant.ts
+│   │   │   └───index.ts
+│   │   ├───event-emitter
+│   │   │   └───index.ts
+│   │   ├───models
+│   │   │   └───index.ts
+│   │   └───navigation
+│   │       └───index.tsx
+│   ├───shared
+│   │   ├───components
+│   │   │   └───text-wrapper
+│   │   ├───constants
+│   │   │   └───index.ts
+│   │   ├───localization
+│   │   │   └───index.ts
+│   │   └───theme
+│   │       ├───fonts
+│   │       ├───colors.ts
+│   │       ├───font-size.ts
+│   │       ├───index.ts
+│   │       └───theme.ts
+│   └───utils
+│       ├───local-storage
+│       │   └───index.ts
+│       └───index.ts
+├───.babelrc
+├───.buckconfig
+├───.eslintrc.js
+├───.gitattributes
+├───.gitignore
+├───.npmignore
+├───.prettierrc.js
+├───.watchmanconfig
+├───App.tsx
+├───README.md
+├───app.json
+├───index.js
+├───metro.config.js
+├───package-lock.json
+├───package.json
+├───react-native.config.js
+├───tsconfig.json
+```
+
 # Components
 
 ## Styles
