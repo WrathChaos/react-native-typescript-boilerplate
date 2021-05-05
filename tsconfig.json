@@ -38,7 +38,8 @@
       "@services/*": ["./services/*"],
       "@screens/*": ["./screens/*"],
       "@utils": ["./utils/"],
-      "@assets": ["./assets/"]
+      "@assets": ["./assets/"],
+      "@local-storage": ["./services/local-storage"]
     }
   },
   "exclude": [
