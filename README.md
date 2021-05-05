@@ -10,7 +10,7 @@
 
 <p align="center">
   <img alt="React Native Typescript Boilerplate"
-        src="assets/RN-Typescript-Boilerplate.gif" />
+        src="assets/react-native-typescript-boilerplate.gif" />
 </p>
 
 # Installation

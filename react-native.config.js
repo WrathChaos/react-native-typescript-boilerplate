@@ -1,3 +1,6 @@
 module.exports = {
-  assets: ["./assets/fonts", "./assets/fonts/SeuzOne/SuezOne-Regular.ttf"],
+  assets: [
+    "./src/assets/fonts",
+    "./src/assets/fonts/SeuzOne/SuezOne-Regular.ttf",
+  ],
 };

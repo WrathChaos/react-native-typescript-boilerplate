@@ -29,7 +29,7 @@ const Navigation = () => {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName: string = "";
             if (route.name === SCREENS.HOME) {
-              iconName = focused ? "ios-heart" : "heart-outline";
+              iconName = focused ? "home" : "home-outline";
             } else if (route.name === SCREENS.SEARCH) {
               iconName = focused ? "ios-search" : "ios-search";
             }
@@ -40,7 +40,7 @@ const Navigation = () => {
           },
         })}
         tabBarOptions={{
-          activeTintColor: "tomato",
+          activeTintColor: "#5931ff",
           inactiveTintColor: "gray",
         }}
       >

@@ -18,7 +18,7 @@
           { "@services": "./src/services" },
           { "@screens": "./src/screens" },
           { "@utils": "./src/utils/" },
-          { "@assets": "./assets/" },
+          { "@assets": "./src/assets/" },
           { "@event-emitter": "./src/services/event-emitter" }
         ],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]

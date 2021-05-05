@@ -30,7 +30,7 @@ const App = () => {
         isLoaded={isLoaded}
         backgroundColor={null}
         imageBackgroundResizeMode="cover"
-        imageBackgroundSource={require("./assets/splash/lucas-benjamin-unsplash.jpg")}
+        imageBackgroundSource={require("./src/assets/splash/lucas-benjamin-unsplash.jpg")}
       >
         <Navigation />
       </AnimatedSplash>
