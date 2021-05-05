@@ -38,7 +38,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
   - API Service with Usage Examples
 - **Built-in EventEmitter**
   - EventBus
-- **Built-in Local Storage asa MVVK**
+- **Built-in Local Storage asa MMKV Storage**
   - LocalStorage (Instead of AsyncStorage)
 - **Local Storage Ready to Use Util Functions**
 - **Babel Plugin Module Resolver**
