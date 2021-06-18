@@ -21,6 +21,11 @@ You can simply clone the project and start with your barebone project
 git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
 ```
 
+## Android local.properties
+
+- Go to `Android -> local.properties`
+- Change the your local android sdk and cmake path
+
 # What's Included?
 
 - **Navigation System**
