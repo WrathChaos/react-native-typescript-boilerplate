@@ -34,7 +34,7 @@
       "@api": ["./services/api/index"],
       "@fonts": ["./shared/theme/fonts/index"],
       "@colors": ["./shared/theme/colors"],
-      "@theme": ["./shared/theme/*"],
+      "@theme/*": ["./shared/theme/*"],
       "@services/*": ["./services/*"],
       "@screens/*": ["./screens/*"],
       "@utils": ["./utils/"],
