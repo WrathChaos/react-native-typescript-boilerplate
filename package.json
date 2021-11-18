@@ -2,19 +2,6 @@
   "name": "react-native-typescript-boilerplate",
   "version": "2.0.2",
   "description": "A lot of fundamental features with Typescript support React Native Boilerplate",
-  "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
-    "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "clean-up": "rm -rf .git README.md && rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png && git init",
-    "postinstall": "npx jetify",
-    "release:android": "cd android && ./gradlew assembleRelease",
-    "clean:android": "cd android && ./gradlew clean",
-    "release:play": "cd android && ./gradlew bundleRelease",
-    "test:apk": "react-native run-android --variant=release"
-  },
   "dependencies": {
     "@freakycoder/react-native-custom-text": "0.1.2",
     "@freakycoder/react-native-helpers": "^1.0.1",
@@ -40,6 +27,8 @@
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/runtime": "^7.14.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@types/jest": "^26.0.23",
     "@types/react-native": "^0.64.10",
@@ -55,12 +44,26 @@
     "lint-staged": "^11.0.0",
     "metro-react-native-babel-preset": "^0.66.0",
     "prettier": "^2.3.0",
+    "prettier-format": "^3.0.3",
     "react-test-renderer": "17.0.2",
     "typescript": "^4.3.2"
   },
+  "scripts": {
+    "android": "npx eact-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "react-native start --reset-cache",
+    "test": "jest",
+    "clean-up": "rm -rf .git README.md && rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png && git init",
+    "clean:android": "cd android && ./gradlew clean",
+    "release:android": "cd android && ./gradlew assembleRelease",
+    "release:play": "cd android && ./gradlew bundleRelease",
+    "test:apk": "react-native run-android --variant=release",
+    "lint": "tslint -p tsconfig.json"
+  },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run prettier-format && npm run lint && lint-staged",
+      "post-merge": "post-npm-install"
     }
   },
   "lint-staged": {
