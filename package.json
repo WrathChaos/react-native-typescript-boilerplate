@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-boilerplate",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A lot of fundamental features with Typescript support React Native Boilerplate",
   "dependencies": {
     "@freakycoder/react-native-custom-text": "0.1.2",

@@ -10,7 +10,7 @@
 
 <p align="center">
   <img alt="React Native Typescript Boilerplate"
-        src="assets/react-native-typescript-boilerplate.gif" />
+        src="assets/react-native-typescript-boilerplate.gif" height="850" />
 </p>
 
 # Installation
@@ -20,11 +20,6 @@ You can simply clone the project and start with your barebone project
 ```sh
 git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
 ```
-
-## Android local.properties
-
-- Go to `Android -> local.properties`
-- Change the your local android sdk and cmake path
 
 # What's Included?
 
@@ -49,6 +44,10 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 - **Babel Plugin Module Resolver**
   - Fixing the relative path problem
   - Visit `.babelrc` to ready to use and more customization
+- **Pre-commit Husky Integration**
+  - Ready to command husky setup with `npm run husky:setup`
+  - `commitlint` Integration for better commit linter
+  - Auto prettier on pre-commit
 - **Built-in Custom Font Implementation**
   - All you need to do is copy-paste the .tff file and run `npx react-native-asset` command
 
@@ -186,6 +185,16 @@ Clean up the files from the example repository and do not forget to install the 
 - `npm i && npx pod-install`
 - `react-native run-ios/android`
 
+## Husky Integration
+
+Before doing anything else, please simply run the command to initalize the husky.
+
+```jsx
+npm run husky:setup
+```
+
+`husky:setup` will handle the initizalition, installation and ready to use `commitlint` and `prettier`.
+
 ## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
 
 ```sh
@@ -210,6 +219,11 @@ npx react-native-rename <your-project-name> -b <bundleIdentifier>
 - `cd android && mkdir local.properties`
 - `nano local.properties`
 
+## Android local.properties
+
+- Go to `Android -> local.properties`
+- Change the your local android sdk and cmake path
+
 #### Example of MacOS Android SDK Path
 
 Make sure that set your right path of Android SDK
@@ -224,6 +238,7 @@ sdk.dir=/Users/your-name/Library/Android/sdk
 ### Future Plans
 
 - [x] ~~LICENSE~~
+- [x] ~~Better Husky: Linter, Prettier and Commintlint~~
 - [ ] Better and separated documentation
 - [ ] MobX State Tree Fork Version
 - [ ] Write an article about the lib on Medium
