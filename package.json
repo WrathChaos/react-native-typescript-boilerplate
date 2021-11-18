@@ -37,7 +37,6 @@
     "eslint": "^7.27.0",
     "eslint-plugin-import": "^2.23.4",
     "husky": "^7.0.0",
-    "lint-staged": "^11.0.0",
     "metro-react-native-babel-preset": "^0.66.0",
     "prettier": "^2.3.0",
     "typescript": "^4.3.2"
@@ -46,25 +45,16 @@
     "android": "npx eact-native run-android",
     "ios": "npx react-native run-ios",
     "start": "react-native start --reset-cache",
-    "commitlint:setup": "npx husky-init && npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
+    "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier",
+    "husky:commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
+    "husky:prettier": "npx husky add .husky/pre-commit 'npm run prettier'",
     "clean-up": "rm -rf .git README.md && rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png && git init && commitlint:setup",
     "clean:android": "cd android && ./gradlew clean",
     "release:android": "cd android && ./gradlew assembleRelease",
     "release:play": "cd android && ./gradlew bundleRelease",
     "test:apk": "react-native run-android --variant=release",
     "lint": "tslint -p tsconfig.json",
+    "prettier": "cd src && npx prettier --write .",
     "prepare": "husky install"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "post-merge": "post-npm-install"
-    }
-  },
-  "lint-staged": {
-    "./src/*.{js,jsx,ts,tsx}": [
-      "npx prettier --write .",
-      "eslint src/*.js --fix-dry-run"
-    ]
   }
 }
