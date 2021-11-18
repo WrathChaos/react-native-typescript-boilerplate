@@ -54,7 +54,7 @@
     "release:play": "cd android && ./gradlew bundleRelease",
     "test:apk": "react-native run-android --variant=release",
     "lint": "tslint -p tsconfig.json",
-    "prettier": "cd src && npx prettier --write .",
+    "prettier": "cd src && npx prettier --write . && git add .",
     "prepare": "husky install"
   }
 }
