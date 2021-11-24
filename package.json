@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-boilerplate",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "A lot of fundamental features with Typescript support React Native Boilerplate",
   "dependencies": {
     "@freakycoder/react-native-custom-text": "0.1.2",
@@ -42,7 +42,7 @@
     "typescript": "^4.3.2"
   },
   "scripts": {
-   "android": "npx eact-native run-android",
+   "android": "npx react-native run-android",
     "ios": "npx react-native run-ios",
     "start": "react-native start --reset-cache",
     "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier",
