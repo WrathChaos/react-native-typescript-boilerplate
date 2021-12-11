@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-boilerplate",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "A lot of fundamental features with Typescript support React Native Boilerplate",
   "dependencies": {
     "@freakycoder/react-native-bounceable": "^0.2.5",
