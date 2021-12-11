@@ -39,11 +39,9 @@ const Navigation = () => {
               <Icon name={iconName} type="Ionicons" size={size} color={color} />
             );
           },
-        })}
-        defaultScreenOptions={{
           tabBarActiveTintColor: "#5931ff",
           tabBarInactiveTintColor: "gray",
-        }}
+        })}
       >
         <Tab.Screen name={SCREENS.HOME} component={HomeScreen} />
         <Tab.Screen name={SCREENS.SEARCH} component={SearchScreen} />
