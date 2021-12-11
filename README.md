@@ -24,7 +24,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 # What's Included?
 
 - **Navigation System**
-  - React Navigation V5
+  - React Navigation **V6**
   - React Navigation Helpers
   - Ready to use Stack and Tab Screens with navigation
 - **Built-in Theme System**
@@ -173,15 +173,18 @@ import { theme, fonts, colors, spacing, fontSize } from "@shared-styles/index";
 Clean up the files from the example repository and do not forget to install the dependencies
 
 - `rm -rf .git README.md`
-- `rm -rf ./assets/RN-Typescript-Boilerplate.gif ./assets/logo.png`
+- `rm -rf ./assets`
 - `git init`
 - `npm i`
+- `npm run husky:setup`
 - `npx pod-install` (iOS Only)
 - `react-native run-ios/android`
 
 **OR**
 
+- `npm i`
 - `npm run clean-up`
+- `npm run husky:setup`
 - `npm i && npx pod-install`
 - `react-native run-ios/android`
 
@@ -226,11 +229,25 @@ npx react-native-rename <your-project-name> -b <bundleIdentifier>
 
 #### Example of MacOS Android SDK Path
 
-Make sure that set your right path of Android SDK
+Make sure that set your right path of **Android SDK**
+Make sure that set your right path of **Android CMake**
+
+##### MacOS / Linux
+
+Replace your machine name instead of `username`
 
 ```
-ndk.dir=/Users/your-name/Library/Android/sdk/ndk-bundle
-sdk.dir=/Users/your-name/Library/Android/sdk
+sdk.dir=/Users/username/Library/Android/sdk
+cmake.dir=/Users/username/Library/Android/sdk/cmake/3.10.2.4988404
+```
+
+##### Windows
+
+Replace your machine name instead of `username`
+
+```
+sdk.dir=/Users/username/Library/Android/sdk
+cmake.dir=/Users/username/Library/Android/sdk/cmake/3.10.2.4988404
 ```
 
 - `cd .. & react-native run-ios/android`
