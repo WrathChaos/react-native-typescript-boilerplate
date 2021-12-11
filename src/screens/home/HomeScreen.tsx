@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { View, TouchableOpacity } from "react-native";
 import * as NavigationService from "react-navigation-helpers";
+import RNBounceable from "@freakycoder/react-native-bounceable";
 /**
  * ? Local Imports
  */
@@ -18,13 +19,12 @@ export default class HomeScreen extends Component<IProps, IState> {
     return (
       <View style={styles.container}>
         <Text h1> HomeScreen </Text>
-        <TouchableOpacity
+        <RNBounceable
           style={styles.buttonStyle}
           onPress={() => NavigationService.navigate(SCREENS.DETAIL)}
         >
           <Text color={colors.light.white}>Go To Detail Screen</Text>
-        </TouchableOpacity>
-        <Text h5></Text>
+        </RNBounceable>
       </View>
     );
   }

@@ -3,6 +3,7 @@
   "version": "2.1.1",
   "description": "A lot of fundamental features with Typescript support React Native Boilerplate",
   "dependencies": {
+    "@freakycoder/react-native-bounceable": "^0.2.5",
     "@freakycoder/react-native-custom-text": "0.1.2",
     "@freakycoder/react-native-helpers": "^1.0.2",
     "@react-native-community/async-storage": "^1.12.1",

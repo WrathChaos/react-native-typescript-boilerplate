@@ -41,8 +41,8 @@ const Navigation = () => {
           },
         })}
         defaultScreenOptions={{
-          activeTintColor: "#5931ff",
-          inactiveTintColor: "gray",
+          tabBarActiveTintColor: "#5931ff",
+          tabBarInactiveTintColor: "gray",
         }}
       >
         <Tab.Screen name={SCREENS.HOME} component={HomeScreen} />
