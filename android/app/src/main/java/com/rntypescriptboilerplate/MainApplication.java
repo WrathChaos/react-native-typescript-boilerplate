@@ -11,8 +11,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-import com.ammarahmed.mmkv.RNMMKVJSIModulePackage;
-import com.facebook.react.bridge.JSIModulePackage; 
+import com.facebook.react.bridge.JSIModulePackage; // RNAnimated and MMKV
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -32,6 +31,7 @@ public class MainApplication extends Application implements ReactApplication {
           return packages;
         }
 
+        
         @Override
         protected String getJSMainModuleName() {
           return "index";
@@ -39,7 +39,7 @@ public class MainApplication extends Application implements ReactApplication {
 
         @Override
         protected JSIModulePackage getJSIModulePackage() {
-          return new RNMMKVJSIModulePackage();
+          return new CustomJSIPackage();
         }
       };
 

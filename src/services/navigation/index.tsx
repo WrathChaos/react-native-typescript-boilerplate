@@ -26,6 +26,7 @@ const Navigation = () => {
     return (
       <Tab.Navigator
         screenOptions={({ route }) => ({
+          headerShown: false,
           tabBarIcon: ({ focused, color, size }) => {
             let iconName: string = "";
             if (route.name === SCREENS.HOME) {
@@ -39,7 +40,7 @@ const Navigation = () => {
             );
           },
         })}
-        tabBarOptions={{
+        defaultScreenOptions={{
           activeTintColor: "#5931ff",
           inactiveTintColor: "gray",
         }}
@@ -57,11 +58,7 @@ const Navigation = () => {
         isReadyRef.current = true;
       }}
     >
-      <Stack.Navigator
-        screenOptions={{
-          headerShown: false,
-        }}
-      >
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name={SCREENS.HOME} component={renderTabNavigation} />
         <Stack.Screen name={SCREENS.DETAIL}>
           {(props) => <DetailScreen {...props} />}

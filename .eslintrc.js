@@ -38,7 +38,7 @@ module.exports = {
     ],
     "max-len": ["error", 120],
     "@typescript-eslint/ban-ts-comment": 2,
-    "@typescript-eslint/no-explicit-any": 2,
+    "@typescript-eslint/no-explicit-any": 1,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
     "react-native/no-unused-styles": 2,
@@ -73,5 +73,11 @@ module.exports = {
     camelcase: 2,
     "prefer-destructuring": 2,
     "no-nested-ternary": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
   },
 };
