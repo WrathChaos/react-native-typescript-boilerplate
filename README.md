@@ -31,6 +31,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
   - Colors
   - Fonts
   - Built-in TextWrapper for better Custom Text usage
+- **Ready to use React Native Reanimated 2 Integration**
 - **Built-in Animated Splash Screen**
 - **Built-in Localization (Multi-Language Support)**
 - **HTTP Network Management**
