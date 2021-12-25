@@ -184,7 +184,6 @@ Clean up the files from the example repository and do not forget to install the 
 
 - `npm i`
 - `npm run clean-up`
-- `npm run husky:setup`
 - `npm i && npx pod-install`
 - `react-native run-ios/android`
 
