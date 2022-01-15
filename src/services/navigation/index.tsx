@@ -22,23 +22,34 @@ const Navigation = () => {
     return () => (isReadyRef.current = false);
   }, []);
 
+  const renderTabIcon = (
+    route: any,
+    focused: boolean,
+    color: string,
+    size: number,
+  ) => {
+    let iconName: string = "home";
+    switch (route.name) {
+      case SCREENS.HOME:
+        iconName = focused ? "home" : "home-outline";
+        break;
+      case SCREENS.SEARCH:
+        iconName = focused ? "ios-search" : "ios-search";
+        break;
+      default:
+        iconName = focused ? "home" : "home-outline";
+        break;
+    }
+    return <Icon name={iconName} type="Ionicons" size={size} color={color} />;
+  };
+
   const renderTabNavigation = () => {
     return (
       <Tab.Navigator
         screenOptions={({ route }) => ({
           headerShown: false,
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName: string = "";
-            if (route.name === SCREENS.HOME) {
-              iconName = focused ? "home" : "home-outline";
-            } else if (route.name === SCREENS.SEARCH) {
-              iconName = focused ? "ios-search" : "ios-search";
-            }
-            // You can return any component that you like here!
-            return (
-              <Icon name={iconName} type="Ionicons" size={size} color={color} />
-            );
-          },
+          tabBarIcon: ({ focused, color, size }) =>
+            renderTabIcon(route, focused, color, size),
           tabBarActiveTintColor: "#5931ff",
           tabBarInactiveTintColor: "gray",
         })}
