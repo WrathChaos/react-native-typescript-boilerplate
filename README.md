@@ -10,7 +10,7 @@
 
 <p align="center">
   <img alt="React Native Typescript Boilerplate"
-        src="assets/react-native-typescript-boilerplate.gif" height="850" />
+        src="assets/react-native-typescript-boilerplate.gif" height="650" />
 </p>
 
 # 🐶 What's Included?
@@ -73,6 +73,7 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 ## Clean-Up & Simple Run
 
 Clean up the files from the example repository and do not forget to install the dependencies
+There is a good example by default on `HomeScreen`. You can delete the all screens.
 
 - `npm i`
 - `npm run clean-up`
