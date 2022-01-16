@@ -224,11 +224,6 @@ npx react-native-rename <your-project-name> -b <bundleIdentifier>
 - Add: `sdk.dir=/Users/username/Library/Android/sdk` // This example is for MacOS / Linux`
 - Add: `sdk.dir=C\:\\Users\\username\\AppData\\Local\\Android\\Sdk` // This example is for Windows
 
-## Android local.properties
-
-- Go to `Android -> local.properties`
-- Change the your local android sdk and cmake path
-
 #### Example of MacOS Android SDK Path
 
 Make sure that set your right path of Android **SDK**
