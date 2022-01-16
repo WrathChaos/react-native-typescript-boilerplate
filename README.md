@@ -40,7 +40,7 @@ We're proudly announce that `Version 3` is here!
   - 🌙 Dark Theme Support
   - Dynamic Color Palette System
   - Custom Font Support
-  - Built-in TextWrapper for better `Text` usage
+  - Built-in Better `Text`
 - **Ready to use React Native Reanimated 2 Integration**
 - **Native Splash Screen Integration**
   - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
