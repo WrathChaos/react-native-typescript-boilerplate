@@ -23,7 +23,7 @@ We're proudly announce that `Version 3` is here!
 - Awesome Theme Support for both Light / Dark Mode
 - Removed Optional Dependencies
 - Latest `React` and `React Native` Dependencies
-- All Dependencies are upgraded
+- All Dependencies are Upgraded
 - Code Refactoring
 - New GIF with the Project Example for Theming
 
