@@ -10,7 +10,7 @@
           { "@shared-constants": "./src/shared/constants" },
           { "@font-size": "./src/shared/theme/font-size" },
           { "@api": "./src/services/api/index" },
-          { "@fonts": "./src/shared/theme/fonts/index" },
+          { "@fonts": "./src/shared/theme/fonts" },
           { "@colors": "./src/shared/theme/colors" },
           { "@theme": "./src/shared/theme" },
           { "@models": "./src/services/models" },

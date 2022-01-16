@@ -32,7 +32,7 @@
       "@shared-constants": ["./shared/constants"],
       "@font-size": ["./shared/theme/font-size"],
       "@api": ["./services/api/index"],
-      "@fonts": ["./shared/theme/fonts/index"],
+      "@fonts": ["./shared/theme/fonts"],
       "@colors": ["./shared/theme/colors"],
       "@theme/*": ["./shared/theme/*"],
       "@services/*": ["./services/*"],

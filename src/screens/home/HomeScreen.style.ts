@@ -1,11 +1,16 @@
+import { ViewStyle, StyleSheet, TextStyle, ImageStyle } from "react-native";
 import { ExtendedTheme } from "@react-navigation/native";
-import { ViewStyle, StyleSheet, TextStyle } from "react-native";
+import { ScreenWidth } from "@freakycoder/react-native-helpers";
 
 interface Style {
   container: ViewStyle;
   titleTextStyle: TextStyle;
   buttonStyle: ViewStyle;
   buttonTextStyle: TextStyle;
+  header: ViewStyle;
+  contentContainer: ViewStyle;
+  listContainer: ViewStyle;
+  profilePicImageStyle: ImageStyle;
 }
 
 export default (theme: ExtendedTheme) => {
@@ -14,7 +19,6 @@ export default (theme: ExtendedTheme) => {
     container: {
       flex: 1,
       alignItems: "center",
-      justifyContent: "center",
       backgroundColor: colors.background,
     },
     titleTextStyle: {
@@ -22,7 +26,7 @@ export default (theme: ExtendedTheme) => {
     },
     buttonStyle: {
       height: 45,
-      width: "90%",
+      width: ScreenWidth * 0.9,
       marginTop: 32,
       borderRadius: 12,
       alignItems: "center",
@@ -39,6 +43,24 @@ export default (theme: ExtendedTheme) => {
     buttonTextStyle: {
       color: colors.white,
       fontWeight: "700",
+    },
+    header: {
+      width: ScreenWidth * 0.9,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "space-between",
+    },
+    contentContainer: {
+      flex: 1,
+      marginTop: 16,
+    },
+    listContainer: {
+      marginTop: 8,
+    },
+    profilePicImageStyle: {
+      height: 50,
+      width: 50,
+      borderRadius: 30,
     },
   });
 };
