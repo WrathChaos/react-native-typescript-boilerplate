@@ -39,6 +39,12 @@
 │   │   ├───home
 │   │   │   ├───HomeScreen.style.ts
 │   │   │   └───HomeScreen.tsx
+│   │   ├───notification
+│   │   │   ├───NotificationScreen.style.ts
+│   │   │   └───NotificationScreen.tsx
+│   │   ├───profile
+│   │   │   ├───ProfileScreen.style.ts
+│   │   │   └───ProfileScreen.tsx
 │   │   └───search
 │   │       ├───SearchScreen.style.ts
 │   │       └───SearchScreen.tsx
@@ -60,30 +66,28 @@
 │   │   ├───localization
 │   │   │   └───index.ts
 │   │   └───theme
-│   │       ├───fonts
-│   │       ├───colors.ts
-│   │       ├───font-size.ts
-│   │       ├───index.ts
-│   │       └───theme.ts
+│   │       ├───fonts.ts
+│   │       └───themes.ts
 │   └───utils
-│       ├───local-storage
-│       │   └───index.ts
 │       └───index.ts
 ├───.babelrc
-├───.buckconfig
+├───.commitlintrc.json
+├───.eslintignore
 ├───.eslintrc.js
 ├───.gitattributes
 ├───.gitignore
 ├───.npmignore
-├───.prettierrc.js
+├───.prettierignore
+├───.prettierrc
 ├───.watchmanconfig
-├───App.tsx
-├───README.md
 ├───app.json
+├───App.tsx
+├───global.d.ts
 ├───index.js
 ├───metro.config.js
 ├───package-lock.json
 ├───package.json
 ├───react-native.config.js
+├───README.md
 ├───tsconfig.json
 ```
