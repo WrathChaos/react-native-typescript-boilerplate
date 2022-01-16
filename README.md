@@ -13,9 +13,11 @@
         src="assets/react-native-typescript-boilerplate.gif" height="850" />
 </p>
 
-# Installation
+# 🚀 Getting Started
 
-You can simply clone the project and start with your barebone project
+## Quick Start
+
+To create a new project using the barebone boilerplate:
 
 ```sh
 git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
@@ -23,25 +25,31 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 
 # What's Included?
 
+- **Typescript**
+- **Flipper Ready**
 - **Navigation System**
-  - React Navigation **V6**
-  - React Navigation Helpers
+  - React Navigation <b><i>6</i></b>
+  - [React Navigation Helpers](https://github.com/WrathChaos/react-navigation-helpers)
   - Ready to use Stack and Tab Screens with navigation
-- **Built-in Theme System**
-  - Colors
-  - Fonts
-  - Built-in TextWrapper for better Custom Text usage
+- **NEW: Built-in Theme System with Hooks**
+  - Light / Dark Theme Support
+  - Dynamic Color Palette System
+  - Custom Font Support
+  - Built-in TextWrapper for better Text usage
 - **Ready to use React Native Reanimated 2 Integration**
-- **Built-in Animated Splash Screen**
+- **Native Splash Screen Integration**
+  - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
+- **Awesome React Native Helpers Integration**
+  - [React Native Helpers](https://github.com/WrathChaos/react-native-helpers)
+  - Noth Detection Support
+  - Better Dimension Helper (Ex: ScreenWidth, ScreenHeight)
+  - Cool Text Helpers
 - **Built-in Localization (Multi-Language Support)**
 - **HTTP Network Management**
   - Axios
   - API Service with Usage Examples
 - **Built-in EventEmitter**
   - EventBus
-- **Built-in Local Storage asa MMKV Storage**
-  - LocalStorage (Instead of AsyncStorage)
-- **Local Storage Ready to Use Util Functions**
 - **Babel Plugin Module Resolver**
   - Fixing the relative path problem
   - Visit `.babelrc` to ready to use and more customization
@@ -50,7 +58,11 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
   - `commitlint` Integration for better commit linter
   - Auto prettier on pre-commit
 - **Built-in Custom Font Implementation**
-  - All you need to do is copy-paste the .tff file and run `npx react-native-asset` command
+
+  - All you need to do is copy-paste the .tff files into `assets/fonts` folder
+  - Run `npx react-native-asset` command
+
+- **More and more! :)**
 
 ## Project Structure
 
@@ -254,14 +266,14 @@ cmake.dir=/Users/username/Library/Android/sdk/cmake/3.10.2.4988404
 - [x] ~~LICENSE~~
 - [x] ~~Better Husky: Linter, Prettier and Commintlint~~
 - [x] ~~Removal of `react-native-animated-splash-screen`~~
-- [ ] Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)
-- [ ] New Theme Support with React Navigation
+- [x] ~~New Theme Support with React Navigation~~
+- [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
 - [ ] Better and separated documentation
-- [ ] Detox E2E Integration
-- [ ] Redux Fork Version
-- [ ] MobX State Tree Fork Version
-- [ ] Write an article about the lib on Medium
-- [ ] Write an article about the lib on DevTo
+- [ ] `Detox E2E` Integration
+- [ ] `Redux` Fork Version
+- [ ] `MobX State Tree` Fork Version
+- [ ] Write an article about the lib on `Medium`
+- [ ] Write an article about the lib on `DevTo`
 
 ## Credits
 
