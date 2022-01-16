@@ -159,6 +159,12 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [x] ~~New Theme Support with React Navigation~~
 - [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
 - [x] ~~Better and separated documentation~~
+- [ ] `Babel Plugin Module Resolver` Documentation with Example
+- [ ] `Navigation Service` Documentation with Example
+- [ ] `Localization` Documentation with Example
+- [ ] `FAQ` Documentation
+- [ ] `Website` for the boilerplate
+- [ ] Splash Screen Documentation
 - [ ] `Detox E2E` Integration
 - [ ] `Redux` Fork Version
 - [ ] `MobX State Tree` Fork Version
