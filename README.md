@@ -13,17 +13,7 @@
         src="assets/react-native-typescript-boilerplate.gif" height="850" />
 </p>
 
-# 🚀 Getting Started
-
-## Quick Start
-
-To create a new project using the barebone boilerplate:
-
-```sh
-git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
-```
-
-# What's Included?
+# 🐶 What's Included?
 
 - **Typescript**
 - **Flipper Ready**
@@ -32,10 +22,11 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
   - [React Navigation Helpers](https://github.com/WrathChaos/react-navigation-helpers)
   - Ready to use Stack and Tab Screens with navigation
 - **NEW: Built-in Theme System with Hooks**
-  - Light / Dark Theme Support
+  - ☀️ Light Theme Support
+  - 🌙 Dark Theme Support
   - Dynamic Color Palette System
   - Custom Font Support
-  - Built-in TextWrapper for better Text usage
+  - Built-in TextWrapper for better `Text` usage
 - **Ready to use React Native Reanimated 2 Integration**
 - **Native Splash Screen Integration**
   - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
@@ -44,6 +35,9 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
   - Noth Detection Support
   - Better Dimension Helper (Ex: ScreenWidth, ScreenHeight)
   - Cool Text Helpers
+- **React Native Vector Icons**
+  - [React Native Vector Icons]()
+  - [React Native Dynamic Vector Icons](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
 - **Built-in Localization (Multi-Language Support)**
 - **HTTP Network Management**
   - Axios
@@ -64,126 +58,28 @@ git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-a
 
 - **More and more! :)**
 
-## Project Structure
+# 🚀 Getting Started
 
-```
-├───android
-├───ios
-├───src
-│   ├───screens
-│   │   ├───detail
-│   │   │   ├───DetailScreen.style.ts
-│   │   │   └───DetailScreen.tsx
-│   │   ├───home
-│   │   │   ├───HomeScreen.style.ts
-│   │   │   └───HomeScreen.tsx
-│   │   └───search
-│   │       ├───SearchScreen.style.ts
-│   │       └───SearchScreen.tsx
-│   ├───services
-│   │   ├───api
-│   │   │   ├───api.constant.ts
-│   │   │   └───index.ts
-│   │   ├───event-emitter
-│   │   │   └───index.ts
-│   │   ├───models
-│   │   │   └───index.ts
-│   │   └───navigation
-│   │       └───index.tsx
-│   ├───shared
-│   │   ├───components
-│   │   │   └───text-wrapper
-│   │   ├───constants
-│   │   │   └───index.ts
-│   │   ├───localization
-│   │   │   └───index.ts
-│   │   └───theme
-│   │       ├───fonts
-│   │       ├───colors.ts
-│   │       ├───font-size.ts
-│   │       ├───index.ts
-│   │       └───theme.ts
-│   └───utils
-│       ├───local-storage
-│       │   └───index.ts
-│       └───index.ts
-├───.babelrc
-├───.buckconfig
-├───.eslintrc.js
-├───.gitattributes
-├───.gitignore
-├───.npmignore
-├───.prettierrc.js
-├───.watchmanconfig
-├───App.tsx
-├───README.md
-├───app.json
-├───index.js
-├───metro.config.js
-├───package-lock.json
-├───package.json
-├───react-native.config.js
-├───tsconfig.json
+## Quick Start
+
+To create a new project using the barebone boilerplate:
+
+```sh
+git clone git@github.com:WrathChaos/react-native-typescript-boilerplate.git my-app-name
 ```
 
-# Components
-
-## Styles
-
-- **TextWrapper** over default Text component
-- Colors
-- Fonts
-- Theme
-- Font Size
-
-## Imports
-
-Predefined **`h`** tags are usable with TextWrapper
-
-```jsx
-import Text from "@shared-components/text-wrapper/Text";
-
-// ? Advanced Usage Example
-<Text h3 bold right color="#913400" numberOfLines={1} style={{ margin: 16 }}>
-  Heading 3 Bold Right Sided Custom Text
-</Text>;
-```
-
-```jsx
-import colors from "@colors";
-
-<Text h1 color={colors.light.primary}>
-  Heading 1 with custom color from theme
-</Text>;
-```
-
-```jsx
-import fonts from "@fonts";
-
-<Text h5 fontFamily={fonts.helvetica.regular}>
-  Heading 1 with custom font usage
-</Text>;
-```
-
-```jsx
-import fontSize from "@font-size";
-```
-
-```jsx
-import theme from "@theme";
-```
-
-if you want to call them all at once
-
-```js
-import { theme, fonts, colors, spacing, fontSize } from "@shared-styles/index";
-```
-
-# Step By Step Guide
+# 🎯 Step By Step Guide
 
 ## Clean-Up & Simple Run
 
 Clean up the files from the example repository and do not forget to install the dependencies
+
+- `npm i`
+- `npm run clean-up`
+- `npm i && npx pod-install`
+- `react-native run-ios/android`
+
+**OR**
 
 - `rm -rf .git README.md`
 - `rm -rf ./assets`
@@ -193,16 +89,9 @@ Clean up the files from the example repository and do not forget to install the 
 - `npx pod-install` (iOS Only)
 - `react-native run-ios/android`
 
-**OR**
-
-- `npm i`
-- `npm run clean-up`
-- `npm i && npx pod-install`
-- `react-native run-ios/android`
-
 ## Husky Integration
 
-Before doing anything else, please simply run the command to initalize the husky.
+Before doing anything else, please simply run the command to initalize the husky. If you do not run clean-up part you should run the husky setup by yourself
 
 ```jsx
 npm run husky:setup
@@ -232,14 +121,11 @@ npx react-native-rename <your-project-name> -b <bundleIdentifier>
 
 - `npm i`
 - `cd android && mkdir local.properties`
-- `nano local.properties
-- Add: `sdk.dir=/Users/username/Library/Android/sdk` // This example is for MacOS / Linux`
-- Add: `sdk.dir=C\:\\Users\\username\\AppData\\Local\\Android\\Sdk` // This example is for Windows
+- `nano local.properties`
 
 #### Example of MacOS Android SDK Path
 
 Make sure that set your right path of Android **SDK**
-Make sure that set your right path of Android **CMake**
 
 ##### MacOS / Linux
 
@@ -247,7 +133,6 @@ Replace your machine name instead of `username`
 
 ```
 sdk.dir=/Users/username/Library/Android/sdk
-cmake.dir=/Users/username/Library/Android/sdk/cmake/3.10.2.4988404
 ```
 
 ##### Windows
@@ -256,19 +141,23 @@ Replace your machine name instead of `username`
 
 ```
 sdk.dir=/Users/username/Library/Android/sdk
-cmake.dir=/Users/username/Library/Android/sdk/cmake/3.10.2.4988404
 ```
 
 - `cd .. & react-native run-ios/android`
 
-### Future Plans
+# 📃 Documentations
+
+- [Components]("./docs/components.md")
+- [Project Structure]("./docs/project-structure.md")
+
+# 🔮 Roadmap
 
 - [x] ~~LICENSE~~
 - [x] ~~Better Husky: Linter, Prettier and Commintlint~~
 - [x] ~~Removal of `react-native-animated-splash-screen`~~
 - [x] ~~New Theme Support with React Navigation~~
 - [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
-- [ ] Better and separated documentation
+- [x] ~~Better and separated documentation~~
 - [ ] `Detox E2E` Integration
 - [ ] `Redux` Fork Version
 - [ ] `MobX State Tree` Fork Version
