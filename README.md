@@ -161,8 +161,8 @@ sdk.dir=/Users/username/Library/Android/sdk
 
 # 📃 Documentations
 
-- [Components]("./docs/components.md")
-- [Project Structure]("./docs/project-structure.md")
+- [Components]("/docs/components.md")
+- [Project Structure]("/docs/project-structure.md")
 
 # 🔮 Roadmap
 
