@@ -258,13 +258,15 @@ cmake.dir=/Users/username/Library/Android/sdk/cmake/3.10.2.4988404
 
 - [x] ~~LICENSE~~
 - [x] ~~Better Husky: Linter, Prettier and Commintlint~~
-- [ ] Removal of `react-native-animated-splash-screen`
+- [x] ~~Removal of `react-native-animated-splash-screen`~~
 - [ ] Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)
+- [ ] New Theme Support with React Navigation
 - [ ] Better and separated documentation
 - [ ] Detox E2E Integration
 - [ ] Redux Fork Version
 - [ ] MobX State Tree Fork Version
 - [ ] Write an article about the lib on Medium
+- [ ] Write an article about the lib on DevTo
 
 ## Credits
 
