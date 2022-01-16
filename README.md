@@ -41,23 +41,22 @@ We're proudly announce that `Version 3` is here!
   - Dynamic Color Palette System
   - Custom Font Support
   - Built-in Better `Text`
-- **Ready to use React Native Reanimated 2 Integration**
+- **Ready to use [React Native Reanimated 2](https://docs.swmansion.com/react-native-reanimated/) Integration**
 - **Native Splash Screen Integration**
   - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
-- **Awesome React Native Helpers Integration**
-  - [React Native Helpers](https://github.com/WrathChaos/react-native-helpers)
+- **Awesome [React Native Helpers](https://github.com/WrathChaos/react-native-helpers) Integration**
   - Noth Detection Support
   - Better Dimension Helper (Ex: ScreenWidth, ScreenHeight)
   - Cool Text Helpers
 - **React Native Vector Icons**
-  - [React Native Vector Icons]()
+  - [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons)
   - [React Native Dynamic Vector Icons](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
-- **Built-in Localization (Multi-Language Support)**
+- **[Localization](https://github.com/stefalda/ReactNativeLocalization) (Multi-Language Support)**
 - **HTTP Network Management**
-  - Axios
+  - [Axios](https://github.com/axios/axios)
   - API Service with Usage Examples
 - **Built-in EventEmitter**
-  - EventBus
+  - [EventBus](https://github.com/browserify/events#readme)
 - **Babel Plugin Module Resolver**
   - Fixing the relative path problem
   - Visit `.babelrc` to ready to use and more customization
