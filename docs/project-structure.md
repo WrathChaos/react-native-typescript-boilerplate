@@ -1,4 +1,4 @@
-<img alt="React Native Typescript Boilerplate" src="assets/logo.png" width="1050"/>
+<img alt="React Native Typescript Boilerplate" src="../assets/logo.png" width="1050"/>
 
 # 🍺 Project Structure
 
