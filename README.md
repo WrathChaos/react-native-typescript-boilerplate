@@ -32,7 +32,7 @@ We're proudly announce that `Version 3` is here!
 - **Typescript**
 - **Flipper Ready**
 - **Navigation System**
-  - React Navigation <b><i>6</i></b>
+  - [React Navigation 6](https://reactnavigation.org/blog/2021/08/14/react-navigation-6.0/)
   - [React Navigation Helpers](https://github.com/WrathChaos/react-navigation-helpers)
   - Ready to use Stack and Tab Screens with navigation
 - **NEW: Built-in Theme System with Hooks**
