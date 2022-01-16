@@ -13,6 +13,20 @@
         src="assets/react-native-typescript-boilerplate.gif" height="650" />
 </p>
 
+# 🥳 Version 3
+
+We're proudly announce that `Version 3` is here!
+
+- Native Splash Screen
+- Much Better Documentation
+- Detailed Roadmap
+- Awesome Theme Support for both Light / Dark Mode
+- Removed Optional Dependencies
+- Latest `React` and `React Native` Dependencies
+- All Dependencies are upgraded
+- Code Refactoring
+- New GIF with the Project Example for Theming
+
 # 🐶 What's Included?
 
 - **Typescript**
