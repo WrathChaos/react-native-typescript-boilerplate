@@ -48,7 +48,7 @@
     "start": "react-native start --reset-cache",
     "husky:setup": "npx husky-init && npm run husky:commitlint && npm run husky:prettier",
     "husky:commitlint": "npx husky add .husky/commit-msg 'npx --no-install commitlint --edit'",
-    "husky:prettier": "npx husky add .husky/pre-commit 'npm run prettier",
+    "husky:prettier": "npx husky add .husky/pre-commit 'npm run prettier'",
     "clean-up": "rm -rf .git && rm -rf ./assets && git init && npm run husky:setup",
     "clean:android": "cd android && ./gradlew clean",
     "debug:android": "cd android && ./gradlew assembleDebug",
