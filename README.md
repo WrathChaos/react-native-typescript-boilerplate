@@ -164,6 +164,17 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [Components](./docs/components.md)
 - [Project Structure](./docs/project-structure.md)
 
+# FAQ
+
+### - After cleaning up and initialization everything, **jest test** has the error.
+
+- Go to .husky folder
+- Open pre-commit file
+- Remove `npm test` part if you do not use jest tests
+
+<img alt="React Native Typescript Boilerplate"
+        src="assets/faq/faq1.gif"  />
+
 # 🔮 Roadmap
 
 - [x] ~~LICENSE~~
