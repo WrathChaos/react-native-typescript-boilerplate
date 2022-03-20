@@ -2,7 +2,7 @@ module.exports = {
   root: true,
   extends: "@react-native-community",
   parser: "@typescript-eslint/parser",
-  plugins: ["import", "eslint-plugin-import", "@typescript-eslint"],
+  plugins: ["import", "eslint-plugin-import", "@typescript-eslint", "prettier"],
   settings: {
     "import/resolver": {
       node: {
@@ -34,6 +34,19 @@ module.exports = {
       "double",
       {
         avoidEscape: true,
+      },
+    ],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        svg: "always",
+        model: "always",
+        style: "always",
+        png: "always",
+        jpg: "always",
+        json: "always",
+        constant: "always",
       },
     ],
     "max-len": ["error", 120],
@@ -73,6 +86,12 @@ module.exports = {
     camelcase: 2,
     "prefer-destructuring": 2,
     "no-nested-ternary": 2,
+    "prettier/prettier": [
+      "error",
+      {
+        endOfLine: "auto",
+      },
+    ],
     "prettier/prettier": [
       "error",
       {
