@@ -111,7 +111,7 @@ Before doing anything else, please simply run the command to initalize the husky
 npm run husky:setup
 ```
 
-`husky:setup` will handle the initizalition, installation and ready to use `commitlint` and `prettier`.
+`husky:setup` will handle the initialization, installation and ready to use `commitlint`, `prettier` and `eslint`.
 
 ## Rename the project: (Thanks to [react-native-name](https://github.com/junedomingo/react-native-rename))
 
@@ -163,17 +163,6 @@ sdk.dir=/Users/username/Library/Android/sdk
 
 - [Components](./docs/components.md)
 - [Project Structure](./docs/project-structure.md)
-
-# FAQ
-
-### - After cleaning up and initialization everything, **jest test** has the error.
-
-- Go to .husky folder
-- Open pre-commit file
-- Remove `npm test` part if you do not use jest tests
-
-<img alt="React Native Typescript Boilerplate"
-        src="assets/faq/faq1.gif"  />
 
 # 🔮 Roadmap
 
