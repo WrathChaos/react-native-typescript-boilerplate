@@ -9,8 +9,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
  * ? Local & Shared Imports
  */
 import { SCREENS } from "@shared-constants";
-import { palette } from "@theme/themes";
-import { LightTheme, DarkTheme } from "@theme/themes";
+import { LightTheme, DarkTheme, palette } from "@theme/themes";
 // ? Screens
 import HomeScreen from "@screens/home/HomeScreen";
 import SearchScreen from "@screens/search/SearchScreen";
@@ -36,7 +35,7 @@ const Navigation = () => {
     color: string,
     size: number,
   ) => {
-    let iconName: string = "home";
+    let iconName = "home";
     switch (route.name) {
       case SCREENS.HOME:
         iconName = focused ? "home" : "home-outline";

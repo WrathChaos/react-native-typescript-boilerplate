@@ -1,8 +1,37 @@
 module.exports = {
   root: true,
-  extends: "@react-native-community",
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@react-native-community",
+    "prettier",
+  ],
+  ignorePatterns: [
+    "**/*/*.js",
+    "*.js",
+    "*.svg",
+    "*.json",
+    "*.png",
+    "package.json",
+    "package-lock.json",
+  ],
   parser: "@typescript-eslint/parser",
-  plugins: ["import", "eslint-plugin-import", "@typescript-eslint", "prettier"],
+  plugins: [
+    "import",
+    "react",
+    "react-native",
+    "prettier",
+    "react-hooks",
+    "@typescript-eslint",
+    "promise",
+    "unused-imports",
+  ],
+  env: {
+    browser: true,
+    es2021: true,
+    "react-native/react-native": true,
+  },
   settings: {
     "import/resolver": {
       node: {
@@ -49,8 +78,13 @@ module.exports = {
         constant: "always",
       },
     ],
+    "react-hooks/exhaustive-deps": [
+      "error",
+      { additionalHooks: "(useMemoOne)" },
+    ],
     "max-len": ["error", 120],
     "@typescript-eslint/ban-ts-comment": 2,
+    "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/no-explicit-any": 1,
     "@typescript-eslint/explicit-module-boundary-types": 0,
     "react/jsx-filename-extension": ["error", { extensions: [".tsx"] }],
@@ -60,7 +94,6 @@ module.exports = {
     "react-native/no-color-literals": 0,
     "react-native/no-raw-text": 0,
     "import/no-extraneous-dependencies": 2,
-    "import/extensions": ["error", "never", { svg: "always" }],
     "import/no-named-as-default-member": 2,
     "import/order": 0,
     "import/no-duplicates": 2,
@@ -77,21 +110,12 @@ module.exports = {
     "import/no-deprecated": 0,
     "@typescript-eslint/indent": 0,
     "react-hooks/rules-of-hooks": 2,
-    "react-hooks/exhaustive-deps": [
-      "error",
-      { additionalHooks: "(useMemoOne)" },
-    ],
+
     "jest/no-identical-title": 2,
     "jest/valid-expect": 2,
     camelcase: 2,
     "prefer-destructuring": 2,
     "no-nested-ternary": 2,
-    "prettier/prettier": [
-      "error",
-      {
-        endOfLine: "auto",
-      },
-    ],
     "prettier/prettier": [
       "error",
       {

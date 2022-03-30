@@ -24,7 +24,7 @@ const App = () => {
     setTimeout(() => {
       SplashScreen.hide();
     }, 750);
-  }, [scheme]);
+  }, [scheme, isDarkMode]);
 
   return (
     <>

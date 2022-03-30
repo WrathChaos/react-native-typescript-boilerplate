@@ -21,7 +21,7 @@ const API_HEADER = {
  */
 
 export const fetchExample = () =>
-  new Promise(async (resolve, reject) => {
+  new Promise((resolve, reject) => {
     const url = BASE_URL + "your-url";
     axios
       .get(url, {

@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { View, StyleProp, ViewStyle } from "react-native";
+import { View } from "react-native";
 import { useTheme } from "@react-navigation/native";
 import * as NavigationService from "react-navigation-helpers";
 /**
@@ -9,13 +9,9 @@ import createStyles from "./DetailScreen.style";
 import Text from "@shared-components/text-wrapper/TextWrapper";
 import RNBounceable from "@freakycoder/react-native-bounceable";
 
-type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
+interface DetailScreenProps {}
 
-interface IDetailScreenProps {
-  style?: CustomStyleProp;
-}
-
-const DetailScreen: React.FC<IDetailScreenProps> = ({ style }) => {
+const DetailScreen: React.FC<DetailScreenProps> = () => {
   const theme = useTheme();
   const { colors } = theme;
   const styles = useMemo(() => createStyles(theme), [theme]);

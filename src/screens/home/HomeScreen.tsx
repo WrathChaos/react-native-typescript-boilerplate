@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { View, FlatList, Image, StyleProp, ViewStyle } from "react-native";
+import { View, FlatList, Image } from "react-native";
 import { useTheme } from "@react-navigation/native";
 import Icon from "react-native-dynamic-vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -19,15 +19,12 @@ import Text from "@shared-components/text-wrapper/TextWrapper";
 import fonts from "@fonts";
 
 const profileURI =
+  // eslint-disable-next-line max-len
   "https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80";
 
-type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
+interface HomeScreenProps {}
 
-interface IHomeScreenProps {
-  style?: CustomStyleProp;
-}
-
-const HomeScreen: React.FC<IHomeScreenProps> = ({ style }) => {
+const HomeScreen: React.FC<HomeScreenProps> = () => {
   const theme = useTheme();
   const { colors } = theme;
   const styles = useMemo(() => createStyles(theme), [theme]);

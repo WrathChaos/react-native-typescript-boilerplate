@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { View, StyleProp, ViewStyle } from "react-native";
+import { View } from "react-native";
 import { useTheme } from "@react-navigation/native";
 /**
  * ? Local Imports
@@ -7,13 +7,9 @@ import { useTheme } from "@react-navigation/native";
 import createStyles from "./SearchScreen.style";
 import Text from "@shared-components/text-wrapper/TextWrapper";
 
-type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
+interface SearchScreenProps {}
 
-interface ISearchScreenProps {
-  style?: CustomStyleProp;
-}
-
-const SearchScreen: React.FC<ISearchScreenProps> = ({ style }) => {
+const SearchScreen: React.FC<SearchScreenProps> = () => {
   const theme = useTheme();
   const { colors } = theme;
   const styles = useMemo(() => createStyles(theme), [theme]);
