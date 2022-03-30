@@ -64,6 +64,7 @@ We're proudly announce that `Version 3` is here!
   - Ready to command husky setup with `npm run husky:setup`
   - `commitlint` Integration for better commit linter
   - Auto prettier on pre-commit
+  - Awesome ESLint Integration
 - **Built-in Custom Font Implementation**
 
   - All you need to do is copy-paste the .tff files into `assets/fonts` folder
