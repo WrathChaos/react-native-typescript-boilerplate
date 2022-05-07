@@ -177,6 +177,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [ ] `Babel Plugin Module Resolver` Documentation with Example
 - [ ] `Navigation Service` Documentation with Example
 - [ ] `Localization` Documentation with Example
+- [ ] `Theme` Documentation with Example
 - [ ] `FAQ` Documentation
 - [ ] `Website` for the boilerplate
 - [ ] Splash Screen Documentation
