@@ -5,7 +5,7 @@ import SplashScreen from "react-native-splash-screen";
 /**
  * ? Local Imports
  */
-import Navigation from "./src/services/navigation";
+import Navigation from "./src/navigation";
 import { isAndroid } from "@freakycoder/react-native-helpers";
 
 LogBox.ignoreAllLogs();
