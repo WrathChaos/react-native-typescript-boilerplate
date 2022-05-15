@@ -40,7 +40,7 @@ We're proudly announce that `Version 3` is here!
   - 🌙 Dark Theme Support
   - Dynamic Color Palette System
   - Custom Font Support
-  - Built-in Better `Text`
+  - Built-in Better `Text` Component
 - **Ready to use [React Native Reanimated 2](https://docs.swmansion.com/react-native-reanimated/) Integration**
 - **Native Splash Screen Integration**
   - [React Native Splash Screen](https://github.com/crazycodeboy/react-native-splash-screen)
@@ -53,7 +53,8 @@ We're proudly announce that `Version 3` is here!
   - [React Native Dynamic Vector Icons](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
 - **[Localization](https://github.com/stefalda/ReactNativeLocalization) (Multi-Language Support)**
 - **HTTP Network Management**
-  - [Axios](https://github.com/axios/axios)
+  - [Axios](https://github.com/axios/axios)**
+  - [Axios Hooks](https://github.com/simoneb/axios-hooks)
   - API Service with Usage Examples
 - **Built-in EventEmitter**
   - [EventBus](https://github.com/browserify/events#readme)
@@ -175,6 +176,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [x] ~~New Theme Support with React Navigation~~
 - [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
 - [x] ~~Better and separated documentation~~
+- [x] ~~Axios Hooks~~
 - [ ] `Babel Plugin Module Resolver` Documentation with Example
 - [ ] `Navigation Service` Documentation with Example
 - [ ] `Localization` Documentation with Example
@@ -182,7 +184,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [ ] `FAQ` Documentation
 - [ ] `Website` for the boilerplate
 - [ ] Splash Screen Documentation
-- [ ] `Detox E2E` Integration
+- [ ] `Detox E2E` Integration Fork Version
 - [ ] `Redux` Fork Version
 - [ ] `MobX State Tree` Fork Version
 - [ ] Write an article about the lib on `Medium`
