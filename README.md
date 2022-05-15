@@ -13,12 +13,13 @@
         src="assets/react-native-typescript-boilerplate.gif" height="650" />
 </p>
 
-# 🥳 Version 3
+# 🥳 Version 3.3+
 
 We're proudly announce that `Version 3` is here!
 
 - Native Splash Screen
 - Much Better Documentation
+- New React Native Architecture Ready (RN 0.68+) 🍻
 - Detailed Roadmap
 - Awesome Theme Support for both Light / Dark Mode
 - Removed Optional Dependencies
