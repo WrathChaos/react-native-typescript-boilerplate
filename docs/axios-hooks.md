@@ -9,7 +9,8 @@
 - Zero configuration, but configurable if needed
 
 ```js
-import useAxios from 'axios-hooks'
+import useAxios from 'axios-hooks';
+import { View , Text, TouchableOpacity } from "react-native";
 
 function App() {
   const [{ data, loading, error }, refetch] = useAxios(
