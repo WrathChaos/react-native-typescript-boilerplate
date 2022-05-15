@@ -16,8 +16,8 @@ function App() {
     'https://reqres.in/api/users?delay=1'
   )
 
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error!</p>
+  if (loading) return <Text>Loading...</Text>
+  if (error) return <Text>Error!</Text>
 
   return (
     <View>
