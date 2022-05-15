@@ -163,6 +163,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 # 📃 Documentations
 
 - [Components](./docs/components.md)
+- [Axios Hooks](./docs/axios-hooks.md)
 - [Event Emitter Usage](./docs/event-emitter.md)
 - [Project Structure](./docs/project-structure.md)
 
