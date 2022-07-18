@@ -74,8 +74,8 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "engine": {
-    "node": ">= 16.10.0",
-    "npm": ">= 7.21.0"
+    "node": "16.10.0",
+    "npm": "7.21.0"
   },
   "resolutions": {
     "@types/react": "^17"
