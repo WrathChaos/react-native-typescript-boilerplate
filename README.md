@@ -177,7 +177,7 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [x] ~~Implement the native splash screen with [react-native-splash-screen](https://github.com/crazycodeboy/react-native-splash-screen)~~
 - [x] ~~Better and separated documentation~~
 - [x] ~~Axios Hooks~~
-- [ ] React Native New Architecture
+- [x] ~~React Native New Architecture~~
 - [ ] `Babel Plugin Module Resolver` Documentation with Example
 - [ ] `Navigation Service` Documentation with Example
 - [ ] `Localization` Documentation with Example
