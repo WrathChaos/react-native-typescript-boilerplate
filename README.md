@@ -10,7 +10,7 @@
 
 <p align="center">
   <img alt="React Native Typescript Boilerplate"
-        src="assets/react-native-typescript-boilerplate.gif" height="650" width="350" />
+        src="assets/react-native-typescript-boilerplate.gif" height="650" width="325" />
 </p>
 
 # 🥳 Version 3.3+
