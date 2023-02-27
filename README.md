@@ -19,11 +19,9 @@ We're proudly announce that `Version 3` is here!
 
 - Native Splash Screen
 - New React Native Architecture Ready **(RN 0.71+)** 🍻
-- Awesome Theme Support for both Light / Dark Mode
-- Removed Optional Dependencies
-- Latest `React` and `React Native` Dependencies
+- Awesome Theme Support for both Light / Dark Mode 🌙
+- Latest `React` and `React Native` Dependencies 🌟
 - All Dependencies are Upgraded
-- Code Refactoring
 - New GIF with the Project Example for Theming
 - Much Better Documentation
 - Detailed Roadmap
