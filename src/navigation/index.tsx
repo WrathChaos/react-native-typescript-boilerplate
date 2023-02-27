@@ -1,6 +1,6 @@
 import React from "react";
 import { useColorScheme } from "react-native";
-import Icon from "react-native-dynamic-vector-icons";
+import Icon, { IconType } from "react-native-dynamic-vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import { isReadyRef, navigationRef } from "react-navigation-helpers";
@@ -9,7 +9,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
  * ? Local & Shared Imports
  */
 import { SCREENS } from "@shared-constants";
-import { LightTheme, DarkTheme, palette } from "@theme/themes";
+import { DarkTheme, LightTheme, palette } from "@theme/themes";
 // ? Screens
 import HomeScreen from "@screens/home/HomeScreen";
 import SearchScreen from "@screens/search/SearchScreen";
@@ -53,7 +53,14 @@ const Navigation = () => {
         iconName = focused ? "home" : "home-outline";
         break;
     }
-    return <Icon name={iconName} type="Ionicons" size={size} color={color} />;
+    return (
+      <Icon
+        name={iconName}
+        type={IconType.Ionicons}
+        size={size}
+        color={color}
+      />
+    );
   };
 
   const renderTabNavigation = () => {

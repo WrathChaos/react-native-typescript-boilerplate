@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
-import { View, FlatList, Image } from "react-native";
+import { FlatList, Image, View } from "react-native";
 import { useTheme } from "@react-navigation/native";
-import Icon from "react-native-dynamic-vector-icons";
+import Icon, { IconType } from "react-native-dynamic-vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as NavigationService from "react-navigation-helpers";
 import RNBounceable from "@freakycoder/react-native-bounceable";
@@ -39,7 +39,12 @@ const HomeScreen: React.FC<HomeScreenProps> = () => {
 
   const MenuButton = () => (
     <RNBounceable>
-      <Icon name="menu" type="Ionicons" color={colors.iconBlack} size={30} />
+      <Icon
+        name="menu"
+        type={IconType.Ionicons}
+        color={colors.iconBlack}
+        size={30}
+      />
     </RNBounceable>
   );
 
