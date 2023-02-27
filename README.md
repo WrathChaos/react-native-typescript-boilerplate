@@ -15,7 +15,7 @@
 
 # 🥳 Version 3.5 is here 😍
 
-We're proudly announce that `Version 3` is here!
+We're proudly announce that `Version 3.5` is here!
 
 - Native Splash Screen
 - New React Native Architecture Ready **(RN 0.71+)** 🍻
