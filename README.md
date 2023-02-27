@@ -52,7 +52,7 @@ We're proudly announce that `Version 3` is here!
   - [React Native Dynamic Vector Icons](https://github.com/WrathChaos/react-native-dynamic-vector-icons)
 - **[Localization](https://github.com/stefalda/ReactNativeLocalization) (Multi-Language Support)**
 - **HTTP Network Management**
-  - [Axios](https://github.com/axios/axios)**
+  - [Axios](https://github.com/axios/axios)
   - [Axios Hooks](https://github.com/simoneb/axios-hooks)
   - API Service with Usage Examples
 - **Built-in EventEmitter**
