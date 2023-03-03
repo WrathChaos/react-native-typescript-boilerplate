@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-boilerplate",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "description": "React Native Template/Boilerplate for awesome applications, using Typescript with a lot of built-in ready features.",
   "dependencies": {
     "@freakycoder/react-native-bounceable": "1.0.3",
