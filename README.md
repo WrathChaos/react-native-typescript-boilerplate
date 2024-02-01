@@ -13,15 +13,16 @@
         src="assets/react-native-typescript-boilerplate.gif" height="650" width="325" />
 </p>
 
-# 🥳 Version 3.5 is here 😍
+# 🥳 Version 4.0.0 is here 😍
 
-We're proudly announce that `Version 3.5` is here!
+We're proudly announce that `Version 4.0.0` is here!
 
+- Better **built-in theming** support with React Navigation
 - Native Splash Screen
-- New React Native Architecture Ready **(RN 0.71+)** 🍻
+- New React Native Architecture Ready **(RN 0.73+)** 🍻
 - Awesome Theme Support for both Light / Dark Mode 🌙
 - Latest `React` and `React Native` Dependencies 🌟
-- All Dependencies are Upgraded
+- All Dependencies are **Upgraded**
 - New GIF with the Project Example for Theming
 - Much Better Documentation
 - Detailed Roadmap
@@ -97,7 +98,6 @@ There is a good example by default on `HomeScreen`. You can delete the all scree
 
 - `rm -rf .git README.md`
 - `rm -rf ./assets`
-- `git init`
 - `npm i`
 - `npm run husky:setup`
 - `npx pod-install` (iOS Only)
@@ -184,8 +184,6 @@ sdk.dir=/Users/username/Library/Android/sdk
 - [ ] `Website` for the boilerplate
 - [ ] Splash Screen Documentation
 - [ ] `Detox E2E` Integration Fork Version
-- [ ] `Redux` Fork Version
-- [ ] `MobX State Tree` Fork Version
 - [ ] Write an article about the lib on `Medium`
 - [ ] Write an article about the lib on `DevTo`
 
