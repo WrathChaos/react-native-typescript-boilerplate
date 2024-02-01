@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
 import { View } from "react-native";
+import createStyles from "./SearchScreen.style";
 import { useTheme } from "@react-navigation/native";
 import Text from "@shared-components/text-wrapper/TextWrapper";
-
-import createStyles from "./SearchScreen.style";
 
 const SearchScreen: React.FC = () => {
   const theme = useTheme();

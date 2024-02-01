@@ -1,14 +1,13 @@
-import "react-native-gesture-handler";
-
 import React from "react";
 import { LogBox, StatusBar, useColorScheme } from "react-native";
+import "react-native-gesture-handler";
 import SplashScreen from "react-native-splash-screen";
-import { isAndroid } from "@freakycoder/react-native-helpers";
 
 /**
  * ? Local Imports
  */
 import Navigation from "./src/navigation";
+import { isAndroid } from "@freakycoder/react-native-helpers";
 
 LogBox.ignoreAllLogs();
 

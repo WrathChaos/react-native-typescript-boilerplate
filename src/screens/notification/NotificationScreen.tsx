@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
 import { View } from "react-native";
+import createStyles from "./NotificationScreen.style";
 import { useTheme } from "@react-navigation/native";
 import Text from "@shared-components/text-wrapper/TextWrapper";
-
-import createStyles from "./NotificationScreen.style";
 
 const ProfileScreen: React.FC = () => {
   const theme = useTheme();

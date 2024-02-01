@@ -5,7 +5,7 @@ module.exports = {
   trailingComma: "all",
   tabWidth: 2,
   semi: true,
-  plugins: ["@ianvs/prettier-plugin-sort-imports"],
+  plugins: [require.resolve("@trivago/prettier-plugin-sort-imports")],
   importOrder: [
     "^react",
     "^react-native",

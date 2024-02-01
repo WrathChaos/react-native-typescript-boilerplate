@@ -1,15 +1,13 @@
 /**
  * ? Local Imports
  */
-
 import React, { useMemo } from "react";
 import { View } from "react-native";
 import * as NavigationService from "react-navigation-helpers";
+import createStyles from "./DetailScreen.style";
 import RNBounceable from "@freakycoder/react-native-bounceable";
 import { useTheme } from "@react-navigation/native";
 import Text from "@shared-components/text-wrapper/TextWrapper";
-
-import createStyles from "./DetailScreen.style";
 
 interface DetailScreenProps {}
 

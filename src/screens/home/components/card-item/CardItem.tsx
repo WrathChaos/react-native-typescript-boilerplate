@@ -2,12 +2,11 @@ import React, { useMemo } from "react";
 import type { StyleProp, ViewStyle } from "react-native";
 import { View } from "react-native";
 import Icon, { IconType } from "react-native-dynamic-vector-icons";
+import createStyles from "./CardItem.style";
 import RNBounceable from "@freakycoder/react-native-bounceable";
 import { useTheme } from "@react-navigation/native";
 import type { ICardItem } from "@services/models";
 import Text from "@shared-components/text-wrapper/TextWrapper";
-
-import createStyles from "./CardItem.style";
 
 type CustomStyleProp = StyleProp<ViewStyle> | Array<StyleProp<ViewStyle>>;
 
