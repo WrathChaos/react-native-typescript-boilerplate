@@ -12,9 +12,9 @@ module.exports = {
     "^moment",
     "<THIRD_PARTY_MODULES>",
     "",
-    "^[./]"
+    "^[./]",
   ],
   importOrderBuiltinModulesToTop: true,
   importOrderSortSpecifiers: true,
-  importOrderMergeDuplicateImports: true
+  importOrderMergeDuplicateImports: true,
 };
