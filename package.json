@@ -1,7 +1,7 @@
 {
   "name": "rntypescriptboilerplate",
   "version": "4.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "android": "npx react-native run-android",
     "ios": "npx react-native run-ios",
