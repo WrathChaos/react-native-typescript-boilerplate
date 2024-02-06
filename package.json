@@ -1,6 +1,6 @@
 {
   "name": "react-native-typescript-boilerplate",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "private": false,
   "scripts": {
     "android": "npx react-native run-android",
