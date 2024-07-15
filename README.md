@@ -69,6 +69,12 @@ We're proudly announce that `Version 4.0.0` is here!
 - **Built-in Custom Font Implementation**
   - All you need to do is copy-paste the .tff files into `assets/fonts` folder
   - Run `npx react-native-asset` command
+- **Better Eslint and Prettier**
+  - Auto import order dependency
+  - Battle proof linting and prettier rules
+  - Ready to use `.eslintrc.js` and `.prettierrc.js`
+
+
 
 - **More and more! :)**
 
