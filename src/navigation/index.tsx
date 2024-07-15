@@ -1,17 +1,16 @@
 import React from "react";
 import { useColorScheme } from "react-native";
-import Icon, { IconType } from "react-native-dynamic-vector-icons";
-import { isReadyRef, navigationRef } from "react-navigation-helpers";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import Icon, { IconType } from "react-native-dynamic-vector-icons";
+import { isReadyRef, navigationRef } from "react-navigation-helpers";
 import DetailScreen from "@screens/detail/DetailScreen";
 // ? Screens
 import HomeScreen from "@screens/home/HomeScreen";
 import NotificationScreen from "@screens/notification/NotificationScreen";
 import ProfileScreen from "@screens/profile/ProfileScreen";
 import SearchScreen from "@screens/search/SearchScreen";
-
 /**
  * ? Local & Shared Imports
  */

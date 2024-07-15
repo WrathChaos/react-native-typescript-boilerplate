@@ -1,5 +1,4 @@
-import type { ExtendedTheme } from "@react-navigation/native";
-import { DefaultTheme } from "@react-navigation/native";
+import { DefaultTheme, type ExtendedTheme } from "@react-navigation/native";
 
 export const palette = {
   primary: "#0564d4",

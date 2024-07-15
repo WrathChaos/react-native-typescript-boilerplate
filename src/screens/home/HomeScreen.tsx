@@ -1,16 +1,16 @@
 import React, { useMemo } from "react";
 import { FlatList, Image, View } from "react-native";
+import { useTheme } from "@react-navigation/native";
 import Icon, { IconType } from "react-native-dynamic-vector-icons";
 import { SafeAreaView } from "react-native-safe-area-context";
 import * as NavigationService from "react-navigation-helpers";
-import createStyles from "./HomeScreen.style";
-import CardItem from "./components/card-item/CardItem";
-import MockData from "./mock/MockData";
 import fonts from "@fonts";
 import RNBounceable from "@freakycoder/react-native-bounceable";
-import { useTheme } from "@react-navigation/native";
 import Text from "@shared-components/text-wrapper/TextWrapper";
 import { SCREENS } from "@shared-constants";
+import CardItem from "./components/card-item/CardItem";
+import createStyles from "./HomeScreen.style";
+import MockData from "./mock/MockData";
 
 const profileURI =
   // eslint-disable-next-line max-len

@@ -1,5 +1,4 @@
-import type { ViewStyle } from "react-native";
-import { StyleSheet } from "react-native";
+import { StyleSheet, type ViewStyle } from "react-native";
 import type { ExtendedTheme } from "@react-navigation/native";
 
 interface Style {
