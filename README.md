@@ -73,6 +73,7 @@ We're proudly announce that `Version 4.0.0` is here!
   - Auto import order dependency
   - Battle proof linting and prettier rules
   - Ready to use `.eslintrc.js` and `.prettierrc.js`
+- **`PrivacyInfo.xcprivacy` added for iOS**
 
 
 
